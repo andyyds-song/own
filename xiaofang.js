@@ -22,13 +22,13 @@ $.msg("📣📣已获取答案！");
 var num =readlist.length;
 
 for (let i = 0; i < num ; i++){
-    body.data[i].examTime = "888";
+    body.data[i].examTime = "888"
      
-    let bb=eval ("(" +   body.data[i].answerContent + ")");
+    let bb=eval ("(" +   body.data[i].answerContent + ")")
      
-    bb.push({'name':'🎉答案：','text':body.data[i].correctAnswer});
+    bb.push({'name':'🎉答案：','text':body.data[i].correctAnswer})
      
-    body.data[i].answerContent = JSON.stringify(bb);
+    body.data[i].answerContent = JSON.stringify(bb)
      
 }
 
