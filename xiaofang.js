@@ -4,14 +4,10 @@
 
 ^https://xfzzgl.zjxf119.com/v1/xyxf/zzgl/trainingExam/Knowledge/readList url script-response-body https://raw.githubusercontent.com/390788781/own/main/xiaofang.js
 
-
-
-
-
 [MITM]
 hostname=xfzzgl.zjxf119.com
-
 */
+
 
 const $ = Env("消防考试题目",true);
 
@@ -19,21 +15,19 @@ var body = $response.body;
 
 var body = eval ("(" + body + ")");
 
-var readlist = body.data
-$.msg("📣📣已获取答案！")
-var num =readlist.length
+var readlist = body.data；
+$.msg("📣📣已获取答案！")；
+var num =readlist.length；
 
 for (let i = 0; i < num ; i++){
-     body.data[i].examTime = "888";
- 
-    let bb=eval ("(" +   body.data[i].answerContent + ")") 
-bb.push({'name':'🎉答案：','text':body.data[i].correctAnswer})
-    body.data[i].answerContent = JSON.stringify(bb)
-  
+     body.data[i].examTime = "888"；
+    let bb=eval ("(" +   body.data[i].answerContent + ")") ；
+    bb.push({'name':'🎉答案：','text':body.data[i].correctAnswer})；
+    body.data[i].answerContent = JSON.stringify(bb)； 
 }
 
 body = JSON.stringify(body);
-$done(body)
+$done(body)；
     
 
 
