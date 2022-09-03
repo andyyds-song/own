@@ -1,10 +1,10 @@
 var $ = Env("测试",true);
 $.msg("Hellow！");
-var body = $response.body; 
-$.msg(body);
+var obj = JSON.parse($response.body);
+$.msg(obj);
 
 
-$done();
+$done(obj);
 
 
 /*********************************** API *************************************/
