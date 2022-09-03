@@ -1,7 +1,7 @@
 
 /*圈X
 [rewrite_local]
-^https://xfzzgl.zjxf119.com/v1/xyxf/zzgl/trainingExam/Knowledge/readList url script-response-body https://raw.githubusercontent.com/390788781/own/main/xiaofang.js
+^https://xfzzgl.zjxf119.com/v1/xyxf/zzgl/trainingExam/Knowledge/readList url script-response-body https://raw.githubusercontent.com/390788781/own/main/Fire-test/Firetest.js
 [MITM]
 hostname=xfzzgl.zjxf119.com
 */
