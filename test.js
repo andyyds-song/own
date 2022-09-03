@@ -1,5 +1,10 @@
-const $ = Env("测试",true);
+var $ = Env("测试",true);
 $.msg("Hellow！");
+var body = $response.body; 
+$.msg(body);
+
+
+$done();
 
 
 /*********************************** API *************************************/
