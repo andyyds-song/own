@@ -1,6 +1,6 @@
 var $ = Env("测试",true);
 $.msg("Hellow！");
-var obj = JSON.parse($response.body);
+var obj = $response.body;
 $.msg(obj);
 
 
