@@ -19,7 +19,7 @@ if ($request.method === `OPTIONS`) {
 
 } else {
   var obj = $response.body;
-  $.msg('已获取答案')
+  $.msg('🎉🎉已获取答案🎉🎉')
   obj = JSON.parse(obj)
 
   let num = obj.data.length
