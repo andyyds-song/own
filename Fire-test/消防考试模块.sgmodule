@@ -1,0 +1,9 @@
+#!name=消防答题
+#!desc=浙江消防答题
+
+[MITM]
+hostname = xfzzgl.zjxf119.com
+
+[Script]
+
+消防= type=http-response,requires-body=1,pattern=^https:\/\/xfzzgl.zjxf119.com\/v1\/xyxf\/zzgl\/trainingExam\/Knowledge\/readList,script-path=https://raw.githubusercontent.com/390788781/own/main/Fire-test/Firetest.js
