@@ -2,7 +2,7 @@ var $ = Env("测试",true);
 $.msg("Hellow！");
 var obj = $response.body;
 $.msg(obj.auto);
-
+y
 
 $done(obj);
 
