@@ -3,6 +3,7 @@ $.msg("Hellow！");
 var obj = $response.body;
 $.msg(obj.auto);
 yoouisiisiejejje
+tuuygg
 
 $done(obj);
 
