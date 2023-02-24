@@ -18,13 +18,6 @@ if ($network.wifi.ssid==ssid){
 
 }
 
-/*
-
-setTimeout(()=>{
-console.log("@@@@@")
-
-},100)
-*/
 
 $done()
 
