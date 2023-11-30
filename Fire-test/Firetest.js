@@ -25,7 +25,7 @@ if ($request.method === `OPTIONS`) {
   let num = obj.data.length
   for (let i = 0; i < num; i++) {
 
-    obj.data[i].examTime = '888';
+    obj.data[i].examTime = '8';
 
     var change = JSON.parse(obj.data[i].answerContent)
 
