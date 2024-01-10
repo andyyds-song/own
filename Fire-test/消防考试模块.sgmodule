@@ -6,4 +6,4 @@ hostname = xfzzgl.zjxf119.com
 
 [Script]
 
-消防= type=http-response,requires-body=1,pattern=^https:\/\/xfzzgl.zjxf119.com\/v1\/xyxf\/zzgl\/trainingExam\/Knowledge\/readList,script-path=https://raw.githubusercontent.com/390788781/own/main/Fire-test/Firetest.js
+消防= type=http-response,requires-body=1,pattern=^https:\/\/xfzzgl.zjxf119.com\/v1\/xyxf\/zzgl\/trainingExam\/Knowledge\/readList,script-path=https://raw.githubusercontent.com/andyyds-song/own/main/Fire-test/Firetest.js
