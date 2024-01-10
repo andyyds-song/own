@@ -2,6 +2,12 @@
 [rewrite_local]
 ^https://xfzzgl.zjxf119.com/v1/xyxf/zzgl/trainingExam/Knowledge/readList url script-response-body https://raw.githubusercontent.com/390788781/own/main/Fire-test/Firetest1.js
 
+
+
+
+
+
+hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com
 */
 const $ = Env("name",true);
 const timestamp = (new Date()).valueOf();
