@@ -1,5 +1,5 @@
 #!name=青龙获取京东cookie
-#!desc=青龙获取京东cookie模块
+#!desc=青龙获取京东cookie模块（测试未通过）
 
 [MITM]
 hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com
