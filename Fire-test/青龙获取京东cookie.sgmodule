@@ -1,0 +1,9 @@
+#!name=青龙获取京东cookie
+#!desc=青龙获取京东cookie模块
+
+[MITM]
+hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com
+
+[Script]
+
+消防= type=http-response,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) url script-response-body https://raw.githubusercontent.com/andyyds-song/own/main/Fire-test/Qinglong-save-cookie.js
