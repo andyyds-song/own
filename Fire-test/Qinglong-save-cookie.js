@@ -1,8 +1,6 @@
 /*圈X
 [rewrite_local]
-^https://xfzzgl.zjxf119.com/v1/xyxf/zzgl/trainingExam/Knowledge/readList url script-response-body https://raw.githubusercontent.com/390788781/own/main/Fire-test/Firetest1.js
-
-
+^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) url script-response-body cesi/Qinglong-save-cookie.js
 
 
 
