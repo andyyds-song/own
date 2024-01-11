@@ -1,6 +1,6 @@
 /*圈X
 [rewrite_local]
-^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) url script-response-body https://raw.githubusercontent.com/390788781/own/main/Fire-test/Qinglong-save-cookie.js
+^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) url script-response-body https://raw.githubusercontent.com/andyyds-song/own/main/Fire-test/Qinglong-save-cookie.js
 
 
 
