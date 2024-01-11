@@ -7,7 +7,7 @@
 
 hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com
 */
-const $ = Env("name",true);
+const $ = Env("青龙上传京东cookie",true);
 const timestamp = (new Date()).valueOf();
 !(async () => {
   if (typeof $request !== "undefined") {
