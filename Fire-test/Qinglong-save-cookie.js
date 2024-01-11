@@ -93,12 +93,12 @@ const request = {
 
         if(result.code == 200){
 
-console.log("老虎机得" +  result.data.token)
+console.log("获取token" +  result.data.token)
 
       await find(ckItems,result.data.token)
 
 }else{
-        console.log("老虎机得" + result.data.token)
+        console.log("无法获取token：" + result.data.token)
         
 }
             $done()
