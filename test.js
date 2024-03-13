@@ -1,7 +1,7 @@
 var $ = Env("测试",true);
 if ($request.method === `OPTIONS`) {
-  //var obj = $response.body; 
-  // $.msg(obj)
+  var obj = $response.body; 
+   $.msg(obj)
   $done({});
 
 } else {
