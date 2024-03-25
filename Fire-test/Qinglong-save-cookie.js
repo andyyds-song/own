@@ -16,7 +16,7 @@ const timestamp = (new Date()).valueOf();
   }
 else{
 
-$.log(`视频任务还剩${voide_time}S`)
+$.log(`无法获取京东cookie`)
 
 
 }
