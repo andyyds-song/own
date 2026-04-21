@@ -4,7 +4,6 @@
 [mitm]
 hostname = wu18.cn
 */
-
 console.log("gggggggggghgg")
 // 请求头阶段：直接放行
 if (typeof $response === 'undefined') {
