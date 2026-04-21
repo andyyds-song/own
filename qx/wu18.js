@@ -1,7 +1,7 @@
 
 /*
 [rewrite_local]
-^http://wu18.cn/cg/zhanghao/ALogOn.php url script-response-body https://raw.githubusercontent.com/andyyds-song/own/refs/heads/main/qx/wu18.js
+^http://wu18\.cn/cg/zhanghao/ALogOn\.php url script-response-body https://raw.githubusercontent.com/andyyds-song/own/refs/heads/main/qx/wu18.js
 [mitm]
 hostname = wu18.cn
 */
