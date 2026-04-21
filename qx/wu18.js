@@ -4,8 +4,8 @@
 [mitm]
 hostname = wu18.cn
 */
-const $ = Env("wu18", true);
-$.log("gggggggggghgg")
+
+console.log("gggggggggghgg")
 // 请求头阶段：直接放行
 if (typeof $response === 'undefined') {
   $done({});
@@ -17,10 +17,10 @@ else {
     body.data = "登录成功";
     body.time = "2026.12.13";
     body = JSON.stringify(body);
-    $.log(body);
+    
     $done(body);
   } catch (e) {
-    $.logErr(e);
+    
     $done($response.body);
   }
 }
