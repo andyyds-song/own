@@ -12,6 +12,7 @@ var body =JSON.parse($response.body);
 body.data="登录成功"
 body.time="2026.12.13"
 body =  JSON.stringify(body)
+$.log(body)
 $done(body)
 // prettier-ignore
 // Modified from Peng-YM
