@@ -1,31 +1,22 @@
 /*
+[rewrite_local]
 ^http://wu18\.cn/cg/zhanghao/ALogOn\.php url script-response-body https://raw.githubusercontent.com/andyyds-song/own/refs/heads/main/qx/wu18.js
 [mitm]
 hostname = wu18.cn
 */
 
-const $ = Env("wu18", true);
-$.log("和hj");
+const $ = Env("wu18",true);
 
-// 请求头阶段：直接放行
-if (typeof $response === 'undefined') {
- $.log("body");
-  $done({});
+try {
+  let body = JSON.parse($response.body); 
+  body.data = "登录成功";
+  body.time = "2026.12.13";
+  $done(JSON.stringify(body));
+} catch (e) {
+  $.logErr(e);
+  $done($response.body);
 }
-// 响应体阶段：修改返回
-else {
-  try {
-    var body = JSON.parse($response.body);
-    body.data = "登录成功";
-    body.time = "2026.12.13";
-    body = JSON.stringify(body);
-    $.log(body);
-    $done(body);
-  } catch (e) {
-    $.logErr(e);
-    $done($response.body);
-  }
-}
+
 
 // prettier-ignore
 // Modified from Peng-YM
