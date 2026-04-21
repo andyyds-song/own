@@ -9,22 +9,17 @@ const $ = Env("wu18", true);
 $.log("bbhj")
 
 // 请求头阶段：直接放行
-if (typeof $response === 'undefined') {
+if ($type === 'request-header') {
+  $done({ headers: $request.headers });
+} else if ($type === 'response-body') {
+  let body = $response.body;
+
+  // 这里写你要修改的逻辑，示例：
+  // body = body.replace('登录失败', '登录成功');
+
+  $done({ body });
+} else {
   $done({});
-}
-// 响应体阶段：修改返回
-else {
-  try {
-    var body = JSON.parse($response.body);
-    body.data = "登录成功";
-    body.time = "2026.12.13";
-    body = JSON.stringify(body);
-    $.log(body);
-    $done(body);
-  } catch (e) {
-    $.logErr(e);
-    $done($response.body);
-  }
 }
 
 // prettier-ignore
