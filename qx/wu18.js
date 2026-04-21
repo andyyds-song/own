@@ -4,7 +4,6 @@
 [mitm]
 hostname = wu18.cn
 */
-
 const $ = Env("wu18", true);
 $.log("gggggggggghgg")
 // 请求头阶段：直接放行
