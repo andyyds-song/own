@@ -6,24 +6,13 @@ hostname = wu18.cn
 */
 console.log("gggggggggghgg")
 // 请求头阶段：直接放行
-if (typeof $response === 'undefined') {
-  $done({});
-}
-// 响应体阶段：修改返回
-else {
-  try {
-    var body = JSON.parse($response.body);
-    body.data = "登录成功";
-    body.time = "2026.12.13";
-    body = JSON.stringify(body);
-    
-    $done(body);
-  } catch (e) {
-    
-    $done($response.body);
-  }
-}
-
+var body =JSON.parse($response.body); 
+//body["data"]="登录成功"
+//body["time"]="2026.12.13"
+body.data="登录成功"
+body.time="2026.12.13"
+body =  JSON.stringify(body)
+$done(body)
 // prettier-ignore
 // Modified from Peng-YM
 /*********************************** API *************************************/
