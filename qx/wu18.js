@@ -1,27 +1,21 @@
 /*
 [rewrite_local]
-[rewrite_local]
 ^http://wu18\.cn/cg/zhanghao/ALogOn\.php url script-request-header,script-response-body https://raw.githubusercontent.com/andyyds-song/own/refs/heads/main/qx/wu18.js
 [mitm]
 hostname = wu18.cn
 */
-
-const $ = Env("wu18", true);
-$.log("bbhj")
-
-// 请求头阶段：直接放行
-if ($type === 'request-header') {
-  $done({ headers: $request.headers });
-} else if ($type === 'response-body') {
-  let body = $response.body;
-
-  // 这里写你要修改的逻辑，示例：
-  // body = body.replace('登录失败', '登录成功');
-
-  $done({ body });
-} else {
-  $done({});
-}
+const $ = Env("wu18",true);
+var body =JSON.parse($response.body); 
+//body["data"]="登录成功"
+//body["time"]="2026.12.13"
+body.data="登录成功"
+body.time="2026.12.13"
+body =  JSON.stringify(body)
+$.log(body)
+$done(body)
+// prettier-ignore
+// Modified from Peng-YM
+/*********************************** API *************************************/
 
 // prettier-ignore
 // Modified from Peng-YM
