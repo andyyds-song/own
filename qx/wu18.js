@@ -6,9 +6,11 @@ hostname = wu18.cn
 */
 
 const $ = Env("wu18", true);
+ $.log("hhj");
 
 // 请求头阶段：直接放行
 if (typeof $response === 'undefined') {
+ $.log("body");
   $done({});
 }
 // 响应体阶段：修改返回
